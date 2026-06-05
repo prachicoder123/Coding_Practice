@@ -1,0 +1,14 @@
+class Solution {
+    public:
+    int whileLoop(int d) {
+        // Your code goes here 
+        int sum=0;
+        int count =1;
+        while(count<=50){
+            sum+=d;
+            d+=10;
+            count++;
+        } 
+        return sum;
+    }
+};
