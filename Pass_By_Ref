@@ -1,0 +1,15 @@
+class Solution{
+public:
+    void reverse(vector<int>& arr){
+        int temp;
+        int start =0;
+        int end= arr.size()-1;
+        while(start<end){
+            temp= arr[start];
+            arr[start]=arr[end];
+            arr[end] = temp;
+            start++;
+            end--;
+        }
+    }
+};
