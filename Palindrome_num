@@ -1,0 +1,16 @@
+class Solution {
+public:
+    bool isPalindrome(int n) {
+        int d,rev=0;
+        int org =n;
+       while(n>0){
+        d = n%10;
+        rev = rev*10+d;
+        n=n/10;
+
+       
+       }
+       return org ==rev;    //why we take org instead of n because due to while loop value of n is changed
+       
+    }
+};
